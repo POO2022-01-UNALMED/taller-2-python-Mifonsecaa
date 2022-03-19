@@ -28,11 +28,12 @@ class Auto:
         
     def cantidadAsientos(self):
         for i in self.asientos:
-            if i == "Asiento":
-                Auto.cantidadCreados += 1
-                return Auto.cantidadCreados 
+            verificar = str(type(i))
+            if verificar == 1:
+                total += 1 
+                return total
             else:
-                return Auto.cantidadCreados
+                return total
             
 
 
