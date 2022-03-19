@@ -32,8 +32,7 @@ class Auto:
             verificar = str(type(i))
             if verificar[8] == "_":
                 lista.append(1)
-        self.cantidadCreados = sum(lista)
-        return self.cantidadCreados
+        return sum(lista)
 
     def verificarIntegridad(self):
         for i in self.asientos:
