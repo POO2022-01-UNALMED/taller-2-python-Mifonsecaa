@@ -27,11 +27,12 @@ class Auto:
         self.registro = registro
         
     def cantidadAsientos(self):
+        total = 0
         for i in self.asientos:
-            verificar = str(type(i))
-            if verificar[17:-2] == "Asiento":
-                self.cantidadCreados += 1
-        return self.cantidadCreados
+            verificar = type(i) == Asiento
+            if verificar == True:
+                total += 1   
+        return total  
 
     def verificarIntegridad(self):
         for i in self.asientos:
