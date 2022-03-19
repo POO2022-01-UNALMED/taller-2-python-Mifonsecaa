@@ -17,7 +17,7 @@ class Asiento:
             self.color = color
     
 class Auto:
-    cantidadCreados = 0
+    cantidadCreados = None
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo = modelo
         self.precio = precio
