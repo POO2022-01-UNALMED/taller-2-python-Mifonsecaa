@@ -27,15 +27,13 @@ class Auto:
         self.registro = registro
         
     def cantidadAsientos(self):
+        lista = []
         for i in self.asientos:
             verificar = str(type(i))
-            if verificar.count("Asiento") == 1:
-                Auto.cantidadCreados += 1 
-                return Auto.cantidadCreados
-            else:
-                return Auto.cantidadCreados
-            
-
+            if verificar[8] == "_":
+                lista.append(1)
+        Auto.cantidadCreados = sum(lista)
+        return Auto.cantidadCreados
 
     def verificarIntegridad(self):
         for i in self.asientos:
