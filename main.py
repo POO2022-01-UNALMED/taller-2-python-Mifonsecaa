@@ -30,10 +30,10 @@ class Auto:
         for i in self.asientos:
             verificar = str(type(i))
             if verificar == 1:
-                total += 1 
-                return total
+                Auto.cantidadCreados += 1 
+                return Auto.cantidadCreados
             else:
-                return total
+                return Auto.cantidadCreados
             
 
 
