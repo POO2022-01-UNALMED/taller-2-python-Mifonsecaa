@@ -29,7 +29,7 @@ class Auto:
     def cantidadAsientos(self):
         for i in self.asientos:
             verificar = str(type(i))
-            if verificar == 1:
+            if verificar.count("Asiento") == 1:
                 Auto.cantidadCreados += 1 
                 return Auto.cantidadCreados
             else:
