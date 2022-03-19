@@ -39,8 +39,8 @@ class Auto:
             if i != None:
                 if self.motor.registro == self.registro and self.registro == i.registro:
                     return "Auto original"
-            else:
-                "Las piezas no son originales"
+                else:
+                    "Las piezas no son originales"
 
 
 class Motor:
