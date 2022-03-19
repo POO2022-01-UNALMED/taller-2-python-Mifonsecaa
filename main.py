@@ -30,7 +30,7 @@ class Auto:
         lista = []
         for i in self.asientos:
             verificar = str(type(i))
-            if verificar[8] == "_":
+            if verificar[17:-2] == "Asiento":
                 lista.append(1)
         return sum(lista)
 
