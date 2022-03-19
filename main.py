@@ -32,8 +32,8 @@ class Auto:
             verificar = str(type(i))
             if verificar[8] == "_":
                 lista.append(1)
-        Auto.cantidadCreados = sum(lista)
-        return Auto.cantidadCreados
+        self.cantidadCreados = sum(lista)
+        return self.cantidadCreados
 
     def verificarIntegridad(self):
         for i in self.asientos:
@@ -52,8 +52,8 @@ class Motor:
     def cambiarRegistro(self, registro):
         self.registro = registro
 
-    #def asignarTipo(self, tipo):
-        #if( tipo == "electrico"):
-            #self.tipo = tipo
-        #elif( tipo == "gasolina"):
-            #self.tipo = tipo
+    def asignarTipo(self, tipo):
+        if( tipo == "electrico"):
+            self.tipo = tipo
+        elif( tipo == "gasolina"):
+            self.tipo = tipo
